@@ -6,10 +6,12 @@ import java.util.List;
  */
 public class Student extends Person {
     String major;
+    boolean fulltime;
     List<Course> courseList = new ArrayList<Course>();
 
-    public Student(String name, String emailAddress, String major) {
+    public Student(String name, String emailAddress, String major, boolean fulltime) {
         super(name, emailAddress);
+        this.fulltime = fulltime;
         this.major = major;
     }
 
